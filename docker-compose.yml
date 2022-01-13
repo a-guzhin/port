@@ -21,8 +21,8 @@ services:
     ports:
       - "8000:80"
     restart: always
-    secrets:
-      - sec
+#    secrets:
+#      - sec
     configs:
       - source: conf
         target: /conf.conf
@@ -40,6 +40,6 @@ configs:
   - conf:
       file: ./conf/test.conf
 
-secrets:
-  - sec:
-      file: ./sec/test.sec
+#secrets:
+#  - sec:
+#      file: ./sec/test.sec
