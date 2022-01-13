@@ -38,8 +38,8 @@ volumes:
 
 configs:
   - conf:
-      file: conf/test.conf
+      file: ./conf/test.conf
 
 secrets:
   - sec:
-      file: sec/test.sec
+      file: ./sec/test.sec
