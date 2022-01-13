@@ -23,10 +23,11 @@ services:
     restart: always
 #    secrets:
 #      - sec
-    configs:
-      - source: conf
-        target: /conf.conf
+#    configs:
+#      - source: conf
+#        target: /conf.conf
     environment:
+      TEST: $TEST
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_USER: wordpress
       WORDPRESS_DB_PASSWORD: wordpress
@@ -36,9 +37,9 @@ volumes:
   db_data: {}
   wordpress_data: {}
 
-configs:
-  - conf:
-      file: ./conf/test.conf
+#configs:
+#  - conf:
+#      file: ./conf/test.conf
 
 #secrets:
 #  - sec:
